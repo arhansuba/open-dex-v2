@@ -1,0 +1,141 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes",
+						"name": "reason",
+						"type": "bytes"
+					}
+				],
+				"name": "Wrap__ERC20TransferFailed",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "recipient",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes",
+						"name": "reason",
+						"type": "bytes"
+					}
+				],
+				"name": "Wrap__NativeTransferFailed",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "NATIVE",
+				"outputs": [
+					{
+						"internalType": "Currency",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "This library allows for transferring and holding native tokens and ERC20 tokens",
+			"errors": {
+				"Wrap__ERC20TransferFailed(address,bytes)": [
+					{
+						"params": {
+							"reason": "bubbled up revert reason"
+						}
+					}
+				],
+				"Wrap__NativeTransferFailed(address,bytes)": [
+					{
+						"params": {
+							"reason": "bubbled up revert reason"
+						}
+					}
+				]
+			},
+			"kind": "dev",
+			"methods": {},
+			"title": "CurrencyLibrary",
+			"version": 1
+		},
+		"userdoc": {
+			"errors": {
+				"Wrap__ERC20TransferFailed(address,bytes)": [
+					{
+						"notice": "Thrown when an ERC20 transfer fails"
+					}
+				],
+				"Wrap__NativeTransferFailed(address,bytes)": [
+					{
+						"notice": "Thrown when a native transfer fails"
+					}
+				]
+			},
+			"kind": "user",
+			"methods": {
+				"NATIVE()": {
+					"notice": "A constant to represent the native currency"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"src/types/Currency.sol": "CurrencyLibrary"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"src/interfaces/external/IERC20Minimal.sol": {
+			"keccak256": "0xe3dda6c7f94d40d4f53785f471e8778ad2fe267ca28e0f5b43b2c33e30e89a95",
+			"license": "GPL-2.0-or-later",
+			"urls": [
+				"bzz-raw://8865d7e2ed00a70f333e58103ac8fa4adfd37c9f6f3c10f7502461d5e282acd6",
+				"dweb:/ipfs/QmPuiUjLhYHycrGaMPFkLiDWnGUmktwbgektEzJv8QVt6p"
+			]
+		},
+		"src/libraries/CustomRevert.sol": {
+			"keccak256": "0x40120e10454467996ca1d7b6ccd2813f055e9093a92bf499b3161b7226e5dab0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0f7d15b941ee6f5ce87a933be3ddc73746687248f7b4a1526da1fd0c08372cd1",
+				"dweb:/ipfs/QmS7bUjKgxctv678wiZczoz1YCAhxqYpk7FoYftVyoAkzH"
+			]
+		},
+		"src/types/Currency.sol": {
+			"keccak256": "0xd9a12daf7995585bc4ec73252bc10070aee58a22dda7a8cbc3e8b751ec9c0d45",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://36044439e35249ade3b3722bb3461e99d8dceb884564768db6fe15c8f53827b0",
+				"dweb:/ipfs/Qmf7Me7NjwyKm3chZGhxv6WCmXeShM8w9uVnD62NfDLRmW"
+			]
+		}
+	},
+	"version": 1
+}

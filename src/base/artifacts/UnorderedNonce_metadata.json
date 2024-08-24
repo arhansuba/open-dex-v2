@@ -1,0 +1,86 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "NonceAlreadyUsed",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "word",
+						"type": "uint256"
+					}
+				],
+				"name": "nonces",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "bitmap",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"stateVariables": {
+				"nonces": {
+					"details": "word is at most type(uint248).max"
+				}
+			},
+			"title": "Unordered Nonce",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"nonces(address,uint256)": {
+					"notice": "mapping of nonces consumed by each address, where a nonce is a single bit on the 256-bit bitmap"
+				}
+			},
+			"notice": "Contract state and methods for using unordered nonces in signatures",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"src/base/UnorderedNonce.sol": "UnorderedNonce"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"src/base/UnorderedNonce.sol": {
+			"keccak256": "0x16f347c203766dca5f33f1ce0216d5946d8fe4b696b2ed3aae0a8ebe0837e706",
+			"license": "GPL-2.0-or-later",
+			"urls": [
+				"bzz-raw://54f50e792225713343cf56bb6ae64179def34f84d71c756817da8a865953e5e9",
+				"dweb:/ipfs/QmamQBd7LsBEvLdwnEunotn1M6L5rkUWotbgp8WwaGpe8M"
+			]
+		}
+	},
+	"version": 1
+}

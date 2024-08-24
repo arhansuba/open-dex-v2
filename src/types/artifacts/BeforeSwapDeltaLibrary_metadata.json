@@ -1,0 +1,64 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "ZERO_DELTA",
+				"outputs": [
+					{
+						"internalType": "BeforeSwapDelta",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"ZERO_DELTA()": {
+					"notice": "A BeforeSwapDelta of 0"
+				}
+			},
+			"notice": "Library for getting the specified and unspecified deltas from the BeforeSwapDelta type",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"src/types/BeforeSwapDelta.sol": "BeforeSwapDeltaLibrary"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"src/types/BeforeSwapDelta.sol": {
+			"keccak256": "0x79a940b47f78fafafceec98ad7e9819269ef340bf22d7db41e7ccfc1bd59cd96",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8e3ccf37b05b9ed99e582ecc1b115e5b017896d49ec0802e56bd2abdda34e616",
+				"dweb:/ipfs/QmP5MjYNCDsgcdvVdoCgXFp2DJBLrepbgHDHpkDDCRnf9m"
+			]
+		}
+	},
+	"version": 1
+}

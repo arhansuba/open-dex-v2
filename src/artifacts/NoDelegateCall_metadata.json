@@ -1,0 +1,66 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "DelegateCallNotAllowed",
+				"type": "error"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"stateVariables": {
+				"original": {
+					"details": "The original address of this contract"
+				}
+			},
+			"title": "Prevents delegatecall to a contract",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"notice": "Base contract that provides a modifier for preventing delegatecall to methods in a child contract",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"src/NoDelegateCall.sol": "NoDelegateCall"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"src/NoDelegateCall.sol": {
+			"keccak256": "0x894114f8f144bd5cc402702d0aa82335a4d5b54ade977a9a1c6720b5e3d87ea2",
+			"license": "BUSL-1.1",
+			"urls": [
+				"bzz-raw://2f5e3f468c43267f368409837ef4aa6ec19b299979892c86717094aca04b019d",
+				"dweb:/ipfs/QmVMvJ1Q3xxXqJn5bWEMXoJcPsE5ighohGAB6eJBokhmPc"
+			]
+		},
+		"src/libraries/CustomRevert.sol": {
+			"keccak256": "0x40120e10454467996ca1d7b6ccd2813f055e9093a92bf499b3161b7226e5dab0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0f7d15b941ee6f5ce87a933be3ddc73746687248f7b4a1526da1fd0c08372cd1",
+				"dweb:/ipfs/QmS7bUjKgxctv678wiZczoz1YCAhxqYpk7FoYftVyoAkzH"
+			]
+		}
+	},
+	"version": 1
+}

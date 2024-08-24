@@ -1,0 +1,89 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "bytes[]",
+						"name": "data",
+						"type": "bytes[]"
+					}
+				],
+				"name": "multicall",
+				"outputs": [
+					{
+						"internalType": "bytes[]",
+						"name": "results",
+						"type": "bytes[]"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"multicall(bytes[])": {
+					"details": "The `msg.value` should not be trusted for any method callable from multicall.",
+					"params": {
+						"data": "The encoded function data for each of the calls to make to this contract"
+					},
+					"returns": {
+						"results": "The results from each of the calls passed in via data"
+					}
+				}
+			},
+			"title": "Multicall_v4",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"multicall(bytes[])": {
+					"notice": "Call multiple functions in the current contract and return the data from all of them if they all succeed"
+				}
+			},
+			"notice": "Enables calling multiple methods in a single call to the contract",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"src/base/Multicall_v4.sol": "Multicall_v4"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"src/base/Multicall_v4.sol": {
+			"keccak256": "0x8befd2400c9d27e513441407acea11792631235a2a19fdbac45cca8cb5a8ab3d",
+			"license": "GPL-2.0-or-later",
+			"urls": [
+				"bzz-raw://210b582a5a7ba3d8d70eb2f38363359895736397d2a86a2a2ceed34e70724c94",
+				"dweb:/ipfs/QmVUcdj4g1uDcCBbohhkMjiyr2JQ6ECft4PYh4Cu5CxW6q"
+			]
+		},
+		"src/interfaces/IMulticall_v4.sol": {
+			"keccak256": "0xc82d5b42c1638b64b2763a2cf21e3b2443000778e6364af191e7a04aa66d6cf3",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://42d04aa92ea63e9eadb044586e41f35c83c4245b8f56184a6a5d3848b072133b",
+				"dweb:/ipfs/QmU456xk29h5FpjoC8JwrLaiyYTmPba4XMEbBAWW1CBPjs"
+			]
+		}
+	},
+	"version": 1
+}

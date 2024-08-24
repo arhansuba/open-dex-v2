@@ -1,5 +1,5 @@
-// SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.20;
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.22;
 
 import "forge-std/Script.sol";
 import {PoolManager} from "@uniswap/v4-core/src/PoolManager.sol";
